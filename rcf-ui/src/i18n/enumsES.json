@@ -1,0 +1,28 @@
+{
+    "codeResultLogin": {
+        "1": "El usuario/contraseña introducidos no son correctos",
+        "2": "El usuario/contraseña introducidos no son correctos. Le quedan {{nIntentos}} intentos para que su usuario, por motivos de seguridad, pase a estar bloqueado de forma cautelar",
+        "3": "El usuario/contraseña introducidos no son correctos",
+        "4": "El usuario/contraseña introducidos no son correctos",
+        "5": "El usuario ha sido bloqueado de forma cautelar por motivos de seguridad. Contacte con el administrador del sistema",
+        "6": "El usuario ha sido bloqueado de forma cautelar por motivos de seguridad. Contacte con el administrador del sistema",
+        "7": "El código introducido no es correcto",
+        "8": "El proceso de acceso ha caducado"
+    },
+    "prestadorTypeIdentificacion": {
+        "1": "Colegiado",
+        "2": "TIM"
+    },
+    "codeIdentificationType": {
+        "1": "DNI",
+        "2": "NIE",
+        "3": "Minor w/o NIF",
+        "4": "Passport",
+        "5": "CIF"
+    },
+
+    "tipoDePago": {
+        "1": "Conjunto",
+        "2": "Individual"
+    }
+}
