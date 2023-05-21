@@ -1,24 +1,26 @@
 import React from 'react';
+import logo from './logo.svg';
 import './App.css';
-import MainLayout from './MainLayout';
-
-import {Route, BrowserRouter} from 'react-router-dom';
-import Home from './Home';
-import NotFound from './NotFound';
 
 function App() {
-
-    console.log(process.env.PUBLIC_URL);
-    return (
-        <div className='App'>
-            <BrowserRouter basename={process.env.PUBLIC_URL}>
-                <Route path='/app' component={MainLayout}/>
-                <Route path='/home' component={Home}/>
-                <Route path='/notfound' component={NotFound}/>
-                {/*<Route path='*' component={NotFound}/>*/}
-            </BrowserRouter>
-        </div>
-    );
+  return (
+    <div className="App">
+      <header className="App-header">
+        <img src={logo} className="App-logo" alt="logo" />
+        <p>
+          Edit <code>src/App.tsx</code> and save to reload.
+        </p>
+        <a
+          className="App-link"
+          href="https://reactjs.org"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Learn React
+        </a>
+      </header>
+    </div>
+  );
 }
 
 export default App;
