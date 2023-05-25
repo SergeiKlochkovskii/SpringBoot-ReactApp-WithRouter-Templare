@@ -1,24 +1,31 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import {BrowserRouter, Navigate, Route, Routes} from 'react-router-dom';
+import Home from './routed-pages/Home';
+import About from './routed-pages/About';
+import NotFound from './routed-pages/NotFound';
+import MainScreen from './routed-pages/MainScreen';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <BrowserRouter>
+
+        <Routes>
+
+            <Route path="/rcf" element={<Home />} />
+            <Route path="/rcf/app" element={<MainScreen />} />
+            <Route path="/about" element={<About />} />
+            <Route path="/notfound" element={<NotFound />} />
+
+            <Route path="*" element={<Navigate to="/notfound" replace />} />
+
+
+        </Routes>
+
+
+      </BrowserRouter>
+
     </div>
   );
 }
